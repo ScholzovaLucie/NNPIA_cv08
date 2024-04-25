@@ -1,0 +1,14 @@
+.formattedDate {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 10px;
+}
+.Clock {
+    position: absolute;
+    top: 0;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: navy;
+    margin: 20px;
+}

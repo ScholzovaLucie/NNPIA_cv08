@@ -21,7 +21,7 @@ class Clock extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="Clock">
         <FormattedDate date={this.state.date} />
       </div>
     );
