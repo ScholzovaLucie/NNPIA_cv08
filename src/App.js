@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/welcome/Welcome';
+import selected from "./img/selected.png";
+import Clock from './components/clock/Clock';
+import Form from './components/form/Form';
 
 function App() {
+  var props = {
+    user: {
+      avatarUrl: selected,
+      name: 'Lucie Scholzová' 
+    },
+    date: '22.04.2024',
+    text: 'Welcome'
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id='App'>
+      <Clock/>
+      <Welcome props={props}/>
+      <Form/>
     </div>
   );
 }
